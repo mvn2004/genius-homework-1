@@ -37,3 +37,170 @@
     font-weight: 700;
     src: url('../fonts/roboto-v32-cyrillic_latin-700.woff2') format('woff2');
 }
+
+:root {
+    --color-primary-white: #FFFFFF;
+    --color-primary-blue: #2B7FFF;
+    --color-primary-darkblue: #011C44;
+    --color-secondary-gray: #4A4A4A;
+    --color-secondary-lightgray: #747272;
+    --color-secondary-darkgray: #011F4A;
+    --color-secondary-gold: #FFD02B;
+}
+
+/* Base */
+body {
+    color: var(--color-primary-darkblue);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Link */
+.link {
+    color: var(--color-primary-darkblue);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--color-primary-blue);
+    font-weight: 700;
+}
+
+/* Hero section */
+.hero-title {
+    color: var(--color-primary-blue);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    line-height: 0.8;
+    text-transform: capitalize;
+}
+
+.hero-text {
+    color: var(--color-secondary-gray);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Button */
+.button {
+    color: var(--color-primary-white);
+    font-weight: 600;
+    background-color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+    border-radius: 32px;
+    cursor: pointer;
+    width: 281px;
+    height: 53px;
+}
+
+.button:hover {
+    color: var(--color-primary-darkblue);
+    background-color: transparent;
+}
+
+/* Services section */
+.section-title {
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.section-title .color-blue {
+    color: var(--color-primary-blue);
+    text-transform: capitalize;
+}
+
+.services-text {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.services-text .text-bold {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Advantages section */
+.advantages-text {
+    color: #000000;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Contacts section */
+.contacts-title {
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-darkblue);
+}
+
+.contacts-title .button:hover {
+    background-color: var(--color-primary-white);
+}
+
+.contacts-text {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contacts-text .color-blue {
+    color: var(--color-primary-blue);
+}
+
+.contacts-form {
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-darkblue);
+    border: 2px solid var(--color-secondary-lightgray);
+    border-radius: 32px;
+    font-size: 13px;
+    width: 310px;
+    height: 52px;
+}
+
+.contacts-warning {
+    color: var(--color-secondary-lightgray);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primary-darkblue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer .link {
+    color: var(--color-primary-white);
+}
+
+.footer .link:hover {
+    color: var(--color-primary-blue);
+}
+
+.address-link {
+    color: var(--color-primary-white);
+    text-decoration: none;
+}
+
+.address-link:hover {
+    color: var(--color-primary-blue);
+    font-weight: 700;
+}
+
+.address-copyright {
+    color: var(--color-secondary-lightgray);
+    font-size: 13px;
+}

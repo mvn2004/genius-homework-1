@@ -100,7 +100,7 @@ ul {
     border: 2px solid var(--color-primary-blue);
     border-radius: 32px;
     cursor: pointer;
-    width: 281px;
+    width: 219px;
     height: 53px;
 }
 
@@ -142,6 +142,10 @@ ul {
 .contacts-title {
     color: var(--color-primary-white);
     background-color: var(--color-primary-darkblue);
+}
+
+.contacts-title .button {
+    width: 281px;
 }
 
 .contacts-title .button:hover {

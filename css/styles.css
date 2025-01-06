@@ -99,13 +99,39 @@ ul {
 
 .link:hover {
     color: var(--color-primary-blue);
-    font-weight: 700;
+    /* font-weight: 700; */
+}
+
+/* Header */
+.header-container {
+    padding: 32px 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 56px;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
 
 /* Hero section */
 .hero-section {
-    padding: 122px 0 128px;
-    width: 529px;
+    padding-top: 16px;
+    padding-bottom: 126px;
+    width: 100%;
+    max-width: 529px;
 }
 
 .hero-section-title {
@@ -126,7 +152,8 @@ ul {
 }
 
 .hero-button {
-    width: 238px;
+    width: 100%;
+    max-width: 238px;
 }
 
 .hero-button-description {
@@ -158,10 +185,24 @@ ul {
 }
 
 /* Services section */
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
 .services-section .container {
-    /* margin-bottom: 176px; */
     margin-bottom: 375px;
-    /* display: inline-block; */
+}
+
+.services-title.section-title {
+    width: 100%;
+    max-width: 529px;
+}
+
+.services-section-title {
+    width: 100%;
+    max-width: 709px;
 }
 
 .section-title {
@@ -169,6 +210,7 @@ ul {
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
+    text-align: center;
 }
 
 .section-title .color-blue {
@@ -181,6 +223,7 @@ ul {
 
 .services-title {
     margin-bottom: 40px;
+    text-align: start;
 }
 
 .services-text {
@@ -199,17 +242,62 @@ ul {
 }
 
 /* Advantages section */
+.advantages-title {
+    text-align: center;
+}
+
+.advantages-list {
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+}
+
+.advantages-item {
+    flex-basis: calc((100% - 112px) / 3);
+}
+
+.advantages-card {
+    padding: 24px 32px;
+    border-radius: 32px;
+}
+
+.advantages-img {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
 
 .advantages-text {
+    width: 100%;
+    min-width: 252px;
     color: #000000;
     line-height: 1.5;
     text-align: center;
 }
 
 /* Procedures section */
+.procedures-list {
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 
 /* Contacts section */
+.contacts-container {
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
 .contacts-forms {
+    width: 100%;
+    max-width: 422px;
+    padding: 48px 56px;
     color: var(--color-primary-white);
     background-color: var(--color-primary-darkblue);
     border: var(--color-secondary-darkgray) solid 4px;
@@ -236,6 +324,7 @@ ul {
 }
 
 .contacts-form {
+    margin-bottom: 16px;
     padding: 18px 32px;
     color: var(--color-primary-white);
     background-color: var(--color-primary-darkblue);
@@ -254,6 +343,13 @@ ul {
 }
 
 /* Footer */
+.footer-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0; */
+}
+
 .footer {
     background-color: var(--color-primary-darkblue);
     font-size: 16px;
@@ -275,7 +371,7 @@ ul {
 
 .address-link:hover {
     color: var(--color-primary-blue);
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 .address-copyright {

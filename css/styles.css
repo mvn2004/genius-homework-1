@@ -255,7 +255,8 @@ ul {
 }
 
 .advantages-item {
-    flex-basis: calc((100% - 112px) / 3);
+    flex-basis: 316px;
+    align-self: flex-end;
 }
 
 .advantages-card {
@@ -282,6 +283,10 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+}
+
+.procedures-item {
+    flex-basis: calc((100% - 32px) / 3);
 }
 
 /* Contacts section */

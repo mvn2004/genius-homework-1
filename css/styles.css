@@ -130,14 +130,18 @@ ul {
 
 /* Hero section */
 .hero-section {
-    padding-top: 16px;
-    padding-bottom: 126px;
-    width: 100%;
-    max-width: 529px;
+    padding: 16px 0 126px calc((100% - 529px) / 3);
+    /* background-image: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%); */
+    background-image: url('../images/hero-section-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 .hero-section-title {
     margin-bottom: 40px;
+    width: 100%;
+    max-width: 529px;
 }
 
 .hero-text {
@@ -244,6 +248,10 @@ ul {
 }
 
 /* Advantages section */
+.advantages-section {
+    background-image: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%);
+}
+
 .advantages-title {
     text-align: center;
 }

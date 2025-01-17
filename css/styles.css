@@ -128,6 +128,10 @@ ul {
     gap: 32px;
 }
 
+.header-icon:hover {
+    fill: var(--color-primary-blue);
+}
+
 /* Hero section */
 .hero-section {
     padding: 16px 0 126px calc((100% - 529px) / 3);
@@ -297,6 +301,26 @@ ul {
     flex-basis: calc((100% - 32px) / 3);
 }
 
+/* Carousel */
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--color-primary-darkblue);
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary-darkblue);
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-darkblue);
+    fill: var(--color-primary-white);
+}
+
 /* Contacts section */
 .contacts-container {
     margin-bottom: 48px;
@@ -391,6 +415,14 @@ ul {
 
 .footer-nav .link:hover {
     color: var(--color-primary-blue);
+}
+
+.footer-icon {
+    fill: var(--color-primary-white);
+}
+
+.footer-icon:hover {
+    fill: var(--color-primary-blue);
 }
 
 .footer-copyright {

@@ -94,7 +94,6 @@ ul {
     top: auto;
     width: 1px;
     height: 1px;
-    overflow: hidden;
 }
 
 .section {
@@ -225,16 +224,15 @@ ul {
 }
 
 /* Services section */
-.services-section {}
+.services-section {
+    position: relative;
+    margin-bottom: 176px;
+}
 
 .services-container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-}
-
-.services-section .container {
-    /* margin-bottom: 375px; */
 }
 
 .services-title.section-title {
@@ -283,9 +281,47 @@ ul {
     margin-bottom: 0;
 }
 
+.services-section-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+}
+
+.services-section-images {
+    position: relative;
+    width: 500px;
+    height: 695px;
+}
+
+.services-section-face1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    max-width: 327px;
+    height: 100%;
+    max-height: 327px;
+    border-radius: 50%;
+}
+
+.services-section-face2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 327px;
+    height: 100%;
+    max-height: 327px;
+    border-radius: 50%;
+}
+
 /* Advantages section */
 .advantages-section {
     /* background-image: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%); */
+    padding-top: 0;
 }
 
 .advantages-container {
@@ -311,6 +347,7 @@ ul {
 }
 
 .advantages-card {
+    background-color: var(--color-primary-white);
     padding: 24px 32px;
     border-radius: 32px;
 }
@@ -462,7 +499,13 @@ ul {
     flex-grow: 1;
 }
 
+.address-icons {
+    display: flex;
+    gap: 24px;
+}
+
 .footer .link {
+    margin-bottom: 16px;
     color: var(--color-primary-white);
 }
 
